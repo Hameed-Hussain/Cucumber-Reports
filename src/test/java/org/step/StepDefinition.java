@@ -12,11 +12,11 @@ public class StepDefinition extends BaseClass {
 	 Pom p;
 	
 	@Given("I am on a Adactin page on Chrome Browser")
-	public void i_am_on_a_Adactin_page_on_Chrome_Browser() {
+	public void i_am_on_a_Adactin_page_on_Chrome_Browser() throws InterruptedException {
 	    setDriver();
 	    launch("https://adactinhotelapp.com/");
 	    maximize();
-	    implicitWait(5);
+	    threadW(5000);
 	}
 
 	@When("I need to enter {string} and {string}")
