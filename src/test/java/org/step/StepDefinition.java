@@ -16,6 +16,7 @@ public class StepDefinition extends BaseClass {
 	    setDriver();
 	    launch("https://adactinhotelapp.com/");
 	    maximize();
+	    implicitWait(5);
 	}
 
 	@When("I need to enter {string} and {string}")
